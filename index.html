@@ -29,7 +29,7 @@
             font-weight: bold;
             font-size: 18px;
             margin-right: auto; /* ブランド名を左に寄せ、リンクを右側に配置 */
-            color: black; /* ブランド名も白色に設定 */
+            color: white; /* ブランド名も白色に設定 */
         }
         .content {
             display: flex;
@@ -41,7 +41,15 @@
         .redirect-button {
             padding: 10px 20px;
             font-size: 16px;
+            background-color: gray; /* ボタンの背景をグレーに設定 */
+            color: white; /* 文字を白色に設定 */
+            font-family: serif; /* 教科書体（セリフ体）に設定 */
+            border: none;
             cursor: pointer;
+            border-radius: 5px; /* ボタンに少し丸みを付ける */
+        }
+        .redirect-button:hover {
+            background-color: darkgray; /* ホバー時に少し濃いグレーに変更 */
         }
     </style>
 </head>
