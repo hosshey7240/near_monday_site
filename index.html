@@ -13,13 +13,13 @@
             display: flex;
             align-items: center;
             padding: 10px 20px;
-            background-color: #f8f9fa;
+            background-color: pink; /* ピンク色のナビゲーションバー */
             border-bottom: 1px solid #ddd;
         }
         .navbar a {
             margin-right: 20px;
             text-decoration: none;
-            color: black;
+            color: white; /* 見やすくするためにリンクを白色に設定 */
             font-size: 16px;
         }
         .navbar a:hover {
@@ -28,7 +28,8 @@
         .navbar .brand {
             font-weight: bold;
             font-size: 18px;
-            margin-right: auto; /* Push other links to the right */
+            margin-right: auto; /* ブランド名を左に寄せ、リンクを右側に配置 */
+            color: white; /* ブランド名も白色に設定 */
         }
         .banner {
             background-color: pink;
@@ -46,33 +47,11 @@
             align-items: center;
             justify-content: center;
             height: 85.7%; /* Remaining space below banner */
-            position: relative;
         }
         .redirect-button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-        }
-        .hamburger-menu {
-            position: absolute;
-            top: 20px;
-            left: 10px;
-            cursor: pointer;
-        }
-        .menu-content {
-            display: none;
-            position: absolute;
-            top: 50px;
-            left: 10px;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .menu-content a {
-            display: block;
-            margin: 5px 0;
-            text-decoration: none;
-            color: black;
         }
     </style>
 </head>
@@ -95,29 +74,11 @@
         ピンクのバナー: お知らせなどをここに表示できます
     </div>
 
-    <!-- ハンバーガーメニュー -->
-    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
-    <div class="menu-content" id="menuContent">
-        <a href="terms.html">利用規約</a>
-        <a href="developer.html">開発者</a>
-    </div>
-
     <!-- 中央コンテンツ -->
     <div class="content">
         <button class="redirect-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1310172598788821022'">
             リダイレクト
         </button>
     </div>
-
-    <script>
-        function toggleMenu() {
-            const menuContent = document.getElementById('menuContent');
-            if (menuContent.style.display === 'block') {
-                menuContent.style.display = 'none';
-            } else {
-                menuContent.style.display = 'block';
-            }
-        }
-    </script>
 </body>
 </html>
