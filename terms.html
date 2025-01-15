@@ -8,36 +8,49 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
         }
-        .navbar {
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* 全画面表示 */
+            max-width: 800px;
+            margin: auto;
         }
         .redirect-button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: gray; /* ボタンの背景をグレーに設定 */
-            color: white; /* 文字を白色に設定 */
-            font-family: serif; /* 教科書体（セリフ体）に設定 */
+            background-color: gray;
+            color: white;
+            font-family: serif;
             border: none;
             cursor: pointer;
-            border-radius: 5px; /* ボタンに少し丸みを付ける */
+            border-radius: 5px;
+            margin-top: 20px;
         }
         .redirect-button:hover {
-            background-color: darkgray; /* ホバー時に少し濃いグレーに変更 */
+            background-color: darkgray;
         }
     </style>
 </head>
 <body>
-    <!-- 中央コンテンツ -->
     <div class="content">
-        <button class="redirect-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1310172598788821022'">
-            リダイレクト
-        </button>
+        <h1>利用規約</h1>
+        <h2>1、免責事項</h2>
+        <p>ここに免責事項の内容を記述します。</p>
+        
+        <h2>2、利用条件</h2>
+        <p>ここに利用条件の内容を記述します。</p>
+        
+        <h2>3、プライバシーポリシー</h2>
+        <p>ここにプライバシーポリシーの内容を記述します。</p>
     </div>
 </body>
 </html>
