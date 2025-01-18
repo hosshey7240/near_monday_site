@@ -1,8 +1,4 @@
-.centered {
-    text-align: center; /* 中央揃え */
-    margin-top: 20px; /* 少し上下に余白を追加 */
-    margin-bottom: 20px;
-}
+
 
 .navbar {
     display: flex;
@@ -28,4 +24,10 @@
     font-size: 18px;
     margin-right: auto; /* ブランド名を左に寄せ、リンクを右側に配置 */
     color: white; /* ブランド名も白色に設定 */
+}
+
+.centered {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* 少し上下に余白を追加 */
+    margin-bottom: 20px;
 }
