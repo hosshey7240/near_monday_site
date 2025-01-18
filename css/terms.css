@@ -32,7 +32,8 @@
 }
 
 .centered {
-    text-align: center; /* 中央揃え */
-    margin-top: 20px; /* 少し上下に余白を追加 */
-    margin-bottom: 20px;
+    text-align: left; /* 左揃え */
+    margin-left: 20px; /* 左に余白を追加 */
+    margin-top: 20px; /* 上に少し余白を追加 */
+    margin-bottom: 20px; /* 下にも少し余白を追加 */
 }
