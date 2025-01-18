@@ -1,20 +1,31 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.centered {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* 少し上下に余白を追加 */
+    margin-bottom: 20px;
+}
+
+.navbar {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh; /* 画面全体を縦中央揃え */
-    text-align: center; /* 横中央揃え */
+    padding: 10px 20px;
+    background-color: pink; /* ピンク色のナビゲーションバー */
+    border-bottom: 1px solid #ddd;
 }
 
-.content {
-    max-width: 800px; /* 読みやすい幅を設定 */
-    margin: auto;
-    line-height: 1.6; /* 行間を調整 */
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white; /* 見やすくするためにリンクを白色に設定 */
+    font-size: 16px;
 }
 
-h1, h2, p {
-    margin: 20px 0; /* 各要素に上下余白を追加 */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .brand {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: auto; /* ブランド名を左に寄せ、リンクを右側に配置 */
+    color: white; /* ブランド名も白色に設定 */
 }
