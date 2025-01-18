@@ -1,18 +1,35 @@
+/* 全体のスタイル */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* コンテンツエリア */
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* 全画面表示 */
+    align-items: flex-start; /* 左揃え */
+    justify-content: flex-start; /* 上揃え */
+    padding: 20px; /* 左右の余白 */
+    height: auto; /* 高さを自動に */
+    background-color: #f9f9f9; /* 背景色を追加 */
 }
+
+/* ナビゲーションバー */
 .navbar {
     display: flex;
     align-items: center;
     padding: 10px 20px;
     background-color: pink; /* ピンク色のナビゲーションバー */
     border-bottom: 1px solid #ddd;
+    position: fixed; /* 固定配置 */
+    top: 0; /* 上部に固定 */
+    width: 100%; /* 横幅いっぱいに */
+    z-index: 10; /* 他の要素の上に表示 */
 }
 
+/* ナビゲーションリンク */
 .navbar a {
     margin-right: 20px;
     text-decoration: none;
@@ -24,6 +41,7 @@
     text-decoration: underline;
 }
 
+/* ブランド名 */
 .navbar .brand {
     font-weight: bold;
     font-size: 18px;
@@ -31,9 +49,25 @@
     color: white; /* ブランド名も白色に設定 */
 }
 
+/* 見出し部分 */
 .centered {
     text-align: left; /* 左揃え */
-    margin-left: 20px; /* 左に余白を追加 */
-    margin-top: 20px; /* 上に少し余白を追加 */
+    margin-left: 40px; /* 左に余白を追加 */
+    margin-top: 80px; /* 上に少し余白を追加 (ナビゲーションバーとの間隔) */
     margin-bottom: 20px; /* 下にも少し余白を追加 */
+    font-size: 24px; /* フォントサイズ調整 */
+}
+
+/* セクションのタイトル */
+h2 {
+    margin-left: 40px; /* 左に余白 */
+    font-size: 20px; /* 見出しのフォントサイズ */
+    margin-top: 20px;
+}
+
+/* 段落部分 */
+p {
+    margin-left: 40px; /* 左に余白 */
+    font-size: 16px;
+    line-height: 1.8;
 }
