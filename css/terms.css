@@ -31,7 +31,7 @@ body {
 
 /* ナビゲーションリンク */
 .navbar a {
-    margin-right: 20px;
+    margin-right: 30px;
     text-decoration: none;
     color: white; /* 見やすくするためにリンクを白色に設定 */
     font-size: 16px;
