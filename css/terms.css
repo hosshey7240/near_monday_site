@@ -53,7 +53,7 @@ body {
 .centered {
     text-align: left; /* 左揃え */
     margin-left: 40px; /* 左に余白を追加 */
-    margin-top: 80px; /* 上に少し余白を追加 (ナビゲーションバーとの間隔) */
+    margin-top: 90px; /* 上に少し余白を追加 (ナビゲーションバーとの間隔) */
     margin-bottom: 20px; /* 下にも少し余白を追加 */
     font-size: 24px; /* フォントサイズ調整 */
 }
