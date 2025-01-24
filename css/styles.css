@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, monospace;
 }
 
 .navbar {
@@ -42,7 +42,7 @@ body {
     font-size: 16px;
     background-color: gray; /* ボタンの背景をグレーに設定 */
     color: white; /* 文字を白色に設定 */
-    font-family: serif; /* 教科書体（セリフ体）に設定 */
+    font-family: monospace; /* 教科書体（セリフ体）に設定 */
     border: none;
     cursor: pointer;
     border-radius: 5px; /* ボタンに少し丸みを付ける */
